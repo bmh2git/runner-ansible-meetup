@@ -1,0 +1,7 @@
+---
+- hosts: Nginx
+  gather_facts: true
+  become: true
+  become_user: root
+  roles:
+    - { role: nginx, tags: ['clc','local'] }

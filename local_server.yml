@@ -1,0 +1,6 @@
+---
+- name: Build Nginx Server
+  hosts: localhost
+  connection: local
+  roles:
+     - local_server

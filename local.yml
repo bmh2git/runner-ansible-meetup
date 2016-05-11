@@ -1,0 +1,3 @@
+---
+- include: local_server.yml
+- include: nginx.yml

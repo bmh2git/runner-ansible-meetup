@@ -1,0 +1,23 @@
+- name: Build Nginx Server
+  vagrant:
+    action: init-up
+    name: "{{ server_name }}"
+    location: "{{ datacenter }}"
+    template: "{{ os_template }}"
+    ip: "{{ ip_address }}"
+  register: srvr 
+
+- debug: var=srvr
+
+- name: wait for ssh port to come up
+  wait_for:
+    host: "{{srvr.public_ip}}"
+    port: 22
+
+- name: Add New Servers to an inventory
+  add_host:
+    name={{ srvr.name }}
+    ansible_ssh_host={{ srvr.public_ip }}
+    ansible_ssh_user=vagrant
+    ansible_ssh_pass=vagrant
+    groupname=Nginx
