@@ -92,7 +92,7 @@ BP - Seperate your infrastructure provisioning plays from your software installa
 
 ## A Simple Playbook
 ### All in One
-`git clone https://github.com/bmh2git/runner-ansible-workshop.git`
+`git clone https://github.com/bmh2git/runner-ansible-meetup.git`
 
 #### Files
 - nginx.yml
