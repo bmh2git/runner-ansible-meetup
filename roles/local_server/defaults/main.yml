@@ -1,4 +1,4 @@
-server_name: nginx
-datacenter: /Users/zaphodbeeblebrox/vdc 
+server_name: nginx 
+datacenter: /Users/hashbang/vdc 
 os_template: ubuntu/trusty64
 ip_address: 192.168.2.33

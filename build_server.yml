@@ -1,6 +1,7 @@
 ---
 - name: Build Nginx Server
-  hosts: localhost
+  hosts: all 
   connection: local
   roles:
-     - build_server
+     - { role: build_server, tags: ['clc'] }
+     - { role: local_server, tags: ['local'] }

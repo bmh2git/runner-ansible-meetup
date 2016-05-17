@@ -5,10 +5,10 @@
   tasks:
     - name: build vagrant system
       vagrant:
-        action: init-up 
-        name: nginx 
-        ip: 192.168.2.10 
-        location: /tmp/vdc
+        action: init-up
+        name: nginx
+        ip: 192.168.2.10
+        location: /Users/hashbang/vdc
         template: ubuntu/trusty64
       register: sys
 
@@ -22,7 +22,7 @@
 
 
 - hosts: NewSystems
-  tasks:   
+  tasks:
     - name: install nginx
       become: yes
       become_user: root

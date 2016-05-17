@@ -91,9 +91,8 @@ BP - Structure all your playbook projects according to the conventional [project
 BP - Seperate your infrastructure provisioning plays from your software installation/configuration plays.
 
 ## A Simple Playbook
-`https://github.com/CenturyLinkCloud/rnr-ansible-meetup-may.git`
 ### All in One
-The all-in-one playbook is a single playbook which tightly couples the building of the infrastructure with the provisioning of software.
+`git clone https://github.com/bmh2git/runner-ansible-workshop.git`
 
 #### Files
 - nginx.yml
@@ -114,7 +113,7 @@ http://198.168.2.10
 	- Unable to test portions of the playbook independently.
 		  
 ### A Playbook Project With Structure
-The larger project here is actually our 'well structured' playbook.  Please take a look at the project structure below.  Notice how the building of the infrastructure is seperate from the installation of the software.
+`git clone https://github.com/jufkes/ansible_meetup`
 
 The Project structure:
 
